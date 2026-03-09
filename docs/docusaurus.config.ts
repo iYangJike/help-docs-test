@@ -22,13 +22,14 @@ const config: Config = {
 
   // Set production URL and base path.
   // In GitHub Actions, publish under https://<owner>.github.io/<repo>/.
-  // url: isGithubActions
-  //   ? `https://${githubOwner}.github.io`
-  //   : "https://paddlehelix.com",
   url: isGithubActions
     ? `https://${githubOwner}.github.io`
-    : "https://help-docs-test.readthedocs.io/zh-cn/latest/",
-  baseUrl: isGithubActions ? (isUserOrOrgSite ? "/" : `/${githubRepo}/`) : "/",
+    : "https://help-docs-test.readthedocs.io",
+  baseUrl: isGithubActions
+    ? isUserOrOrgSite
+      ? "/"
+      : `/${githubRepo}/`
+    : "/zh-cn/latest/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
