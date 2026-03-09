@@ -5,7 +5,7 @@
 # 自动同步最新文档并启动预览
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd)"
-DOCUSARAUS_DIR="$SCRIPT_DIR/paddlehelix-docs"
+DOCUSARAUS_DIR="$SCRIPT_DIR/"
 
 # 颜色输出
 RED='\033[0;31m'

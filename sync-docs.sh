@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Sync markdown docs from ./files into Docusaurus ./paddlehelix-docs/docs
+# Sync markdown docs from ./files into Docusaurus .//docs
 # Usage: ./sync-docs.sh
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd)"
 DOCS_SOURCE="$SCRIPT_DIR/files"
-DOCUSAURUS_DIR="$SCRIPT_DIR/paddlehelix-docs"
+DOCUSAURUS_DIR="$SCRIPT_DIR/"
 TARGET_DIR="$DOCUSAURUS_DIR/docs"
 
 if [ ! -d "$DOCS_SOURCE" ]; then
